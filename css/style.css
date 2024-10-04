@@ -1,0 +1,176 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:regular,600,800&display=swap);
+
+/* Контент */
+.container {
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.content {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-between;
+}
+strong {
+  font-weight: 800;
+}
+.card_box {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  font-family: "Inter";
+  color: #868e96;
+  color: #495057;
+  overflow: hidden;
+  max-width: 920px;
+  width: 100%;
+}
+.ElementsApp,
+.ElementsApp .InputElement {
+  font-family: "Inter";
+}
+.card_input:focus {
+  border-color: rgb(123, 196, 255);
+}
+.StripeElement--focus {
+  border-color: rgb(123, 196, 255);
+}
+
+#card-button {
+  transition: all 0.3s ease 0s;
+  padding: 8px 16px;
+  width: auto;
+  margin-top: 4px;
+}
+.card_title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #343a40;
+}
+label {
+  color: #495057;
+}
+
+.content_left {
+  padding: 30px;
+}
+
+/* Правая часть */
+.content_right {
+  padding: 30px 100px 0 20px;
+}
+.right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  background: #f8f9fa;
+  border-left: rgba(169, 169, 169, 0.3) 1px solid;
+  font-size: 14px;
+}
+.right_block {
+  border-bottom: rgba(169, 169, 169, 0.3) 1px solid;
+}
+.right_block-mid {
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.right_block:last-child {
+  margin-top: 30px;
+  border-bottom: 0;
+}
+.right_product {
+  display: flex;
+  gap: 30px;
+  padding-bottom: 16px;
+}
+
+.right__img {
+  position: relative;
+  background: #fff;
+  border: rgba(169, 169, 169, 0.3) 1px solid;
+  border-radius: 6px;
+  padding: 6px 8px;
+}
+.right__img img {
+  height: 50px;
+}
+
+.right_count {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: #e03131;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.right__title {
+  font-weight: 600;
+  color: #212529;
+  font-size: 16px;
+}
+.right_str {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  color: #212529;
+}
+.right_key {
+}
+.right_value {
+  text-transform: uppercase;
+}
+.right_key-bold {
+  text-transform: uppercase;
+}
+.right_value-red {
+  color: #f03e3e;
+  font-size: 16px;
+}
+
+/* Медиазапросы (Адаптив) */
+@media (max-width: 992px) {
+  .content {
+    flex-direction: column;
+  }
+  .right {
+    border-top: rgba(169, 169, 169, 0.3) 1px solid;
+    border-left: 0;
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
+    padding: 30px 20px;
+  }
+}
+@media (max-width: 520px) {
+  .content_left {
+    padding: 20px;
+  }
+  .card_title {
+    margin-bottom: 16px;
+  }
+  body {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .card_row {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  #card-button {
+    width: 100%;
+  }
+  .container {
+    padding: 0;
+  }
+}
